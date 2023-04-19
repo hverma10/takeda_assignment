@@ -1,0 +1,17 @@
+<!-- Product List -->
+<h2>Product List</h2>
+<div style="display: table">
+  <div *ngFor="let product of this.productList">
+    <hr />
+    <div (click)="productDescription(product)">
+      <img
+        [src]="product.thumbnail"
+        [alt]="product.title"
+        width="100px"
+        height="100px"
+      />
+      <div class="product_name">Product Name: {{ product.title }}</div>
+      <p class="price">Price: {{ product.price }}</p>
+    </div>
+  </div>
+</div>

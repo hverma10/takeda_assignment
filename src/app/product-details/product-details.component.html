@@ -1,0 +1,13 @@
+<!-- Product Details-->
+<div>
+  <img
+    [src]="product.thumbnail"
+    [alt]="product.title"
+    width="100px"
+    height="100px"
+  />
+  <div class="product_name">Product Name: {{ product.title }}</div>
+  <div class="product_name">Product Description: {{ product.description }}</div>
+  <div class="product_name">Product Rating: {{ product.rating }}</div>
+  <p class="price">Product Price: {{ product.price }}</p>
+</div>
